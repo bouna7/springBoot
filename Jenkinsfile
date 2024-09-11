@@ -9,7 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '/usr/share/maven/bin/mvn test'
-                sh 'java -version'
+
             }
         }
     }
