@@ -8,7 +8,7 @@ pipeline {
         }
          stage('Deployer') {
             steps {
-                echo 'Hello, Maven'
+                echo 'Hello, JDK'
                 sh 'mvn --version'
             }
         }
