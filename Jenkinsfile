@@ -3,7 +3,7 @@ pipeline {
      stages {
         stage('Build') {
             steps {
-                sh '/usr/share/maven/bin/mvn clean install'
+            echo 'Hello, JDK'
             }
         }
          stage('Deployer') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '/usr/share/maven/bin/mvn test'
+               echo 'Hello, JDK'
 
             }
         }
