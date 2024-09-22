@@ -9,7 +9,6 @@ pipeline {
          stage('Deployer') {
             steps {
                 echo 'Hello, JDK'
-                sh 'mvn --version'
             }
         }
         stage('Test') {
