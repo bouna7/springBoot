@@ -8,7 +8,7 @@ pipeline {
         }
          stage('konna') {
             steps {
-                echo 'Hello, JDK'
+                sh 'mvn -version'
             }
         }
         stage('Test') {
