@@ -1,20 +1,13 @@
 pipeline {
     agent any
-     stages {
-        stage('Build') {
+    options {
+        // Timeout counter starts AFTER agent is allocated
+        timeout(time: 1, unit: 'SECONDS')
+    }
+    stages {
+        stage('Example') {
             steps {
-            echo 'Hello soninké, JDK'
-            }
-        }
-         stage('konna') {
-            steps {
-                sh 'mvn -version'
-            }
-        }
-        stage('Test') {
-            steps {
-               echo 'Hello, JDK'
-
+                echo 'Hello World'
             }
         }
     }
