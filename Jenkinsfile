@@ -6,7 +6,7 @@ pipeline {
             echo 'Hello, JDK'
             }
         }
-         stage('Deployer') {
+         stage('konna') {
             steps {
                 echo 'Hello, JDK'
             }
