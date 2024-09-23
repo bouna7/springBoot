@@ -3,7 +3,7 @@ pipeline {
      stages {
         stage('Build') {
             steps {
-            echo 'Hello, JDK'
+            echo 'Hello soninké, JDK'
             }
         }
          stage('konna') {
